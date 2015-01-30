@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kasih Kasih</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+
+<!--s:global menu-->
+<section id="gnb">
+	<ul class="gmenu">
+		<!--s:logged-->
+		<li class="logged">
+			<a href="#" trans="disolve" title="My name" class="name">Steve jobs</a>
+			<a href="#" trans="disolve" title="Logout">Logout</a>
+		</li>
+		<!--e:logged-->
+		<!--s:not login-->
+		<li>
+			<a href="#" trans="disolve" title="Login">Login</a>
+		</li>
+		<!--e:not login-->
+		<li class="myzone">
+			<a href="#" trans="disolve" title="My Zone">
+				My Zone<img src="img/gnb_spr.png" class="spr" />
+				<!--s:dropdown menu-->
+				<ul class="myzoneMenu" trans="disolve">
+					<li><a href="#" trans="underline">Receive Gifts</a></li>
+					<li><a href="#" trans="underline">Sent gift</a></li>
+					<li><a href="#" trans="underline">Cart</a></li>
+					<li><a href="#" trans="underline">Wish List</a></li>
+					<li><a href="#" trans="underline">Edit My Profile</a></li>
+					<li><a href="#" trans="underline">Edit decoration</a></li>
+				</ul>
+				<!--e:dropdown menu-->
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Receive Gifts">Receive Gifts</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Cart">
+				<img src="img/gnb_cart_ico.png" title="Cart" alt="Cart" style="margin-top:-4px;" />
+				Cart<span class="count">3</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Customer Service">Customer Service</a>
+		</li>
+	</ul>
+</section>
+<!--e:global menu-->
+
+<!--s:header-->
+<header id="header">
+	<a href="#" class="logo" title="Kasih Kasih"><h1>Kasih Kasih</h1></a>
+	<form name="" action="" method="" class="searchForm">
+		<fieldset>
+			<legend>total search</legend>
+			<input type="text" placeholder="Search product or brand" class="keyword" />
+			<input type="image" src="img/searchForm_submit.jpg" class="submit" />
+		</fieldset>
+	</form>
+</header>
+<!--e:header-->
+
+<!--s:main menu-->
+<nav id="nav">
+	<ul class="mmenu">
+		<li>
+			<a href="#" trans="disolve" title="Brand"><img src="img/mmenu_brand_ico.png" />Brand</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Theme"><img src="img/mmenu_theme_ico.png" />Theme</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Event"><img src="img/mmenu_event_ico.png" />Event</a>
+		</li>
+	</ul>
+</nav>
+<!--e:main menu-->
+
+<!--s:article-->
+<article id="itemView">
+	
+	<!--s:status bar-->
+	<h2 class="__stat_bar">
+		Honey Fritter
+		<ul class="nav_link">
+			<li><a href="#" class="home"><img src="img/nav_bar_home.jpg" /></a></li>
+			<li> > <a href="#">Brand</a></li>
+			<li> > <a href="#">DUNKIN' DONUTS</a></li>
+			<li> > <a href="#">Honey Fritter</a></li>
+		</ul>
+	</h2>
+	<!--e:status bar-->
+	
+	<!--s:item detail-->
+	<form class="detail" action="" method="">
+		<div class="img">
+			<span class="__ico_sale">Sale<br /><strong>10%</strong></span>
+			<img src="img/itemView_img.jpg" />
+		</div>
+		<div class="info_txt">
+			<h3>
+				<span class="brand">DUNKIN' DONUTS</span>
+				<span class="subject">Honey Fritter</span>
+			</h3>
+			<div class="priceArea">
+				<span class="__ico_sale02">SALE <strong>10%</strong></span>
+				<span class="org">Normal Price <strong>495$</strong></span>
+				<span class="now"><strong>295</strong>$</span>
+			</div>
+			<ul class="sub_txt">
+				<li>
+					<strong>Exchange Processing</strong>supermarket
+				</li>
+				<li>
+					<strong>Link</strong><a href="#" target="_blank">http://www.papa.com</a>
+				</li>
+			</ul>
+			
+			<!--s:submit button-->
+			<div class="__btn_btm">
+				<input type="submit" value="Purchase" class="__btn_btm_blue" />
+				<input type="button" value="Cart" class="__btn_btm_gray" />
+				<a href="#" class="__ico_wish"></a>
+			</div>
+			<!--e:submit button-->
+			
+		</div>
+	</form>
+	<!--e:item detail-->
+	
+	<!--s:detail txt-->
+	<section class="detailTxt">
+		<ul class="__article_tab">
+			<li class="active"><a href="#">Detail</a></li>
+			<li><a href="#">Notice</a></li>
+			<li><a href="#">Usage</a></li>
+		</ul>
+		<p class="cont">
+			text
+		</p>
+	</section>
+	<!--e:detail txt-->
+	
+	<!--s:notice txt-->
+	<section class="detailTxt">
+		<ul class="__article_tab">
+			<li><a href="#">Detail</a></li>
+			<li class="active"><a href="#">Notice</a></li>
+			<li><a href="#">Usage</a></li>
+		</ul>
+		<p class="cont">
+			text
+		</p>
+	</section>
+	<!--e:notice txt-->
+	
+	<!--s:usage txt-->
+	<section class="detailTxt">
+		<ul class="__article_tab">
+			<li><a href="#">Detail</a></li>
+			<li><a href="#">Notice</a></li>
+			<li class="active"><a href="#">Usage</a></li>
+		</ul>
+		<p class="cont">
+			text
+		</p>
+	</section>
+	<!--e:usage txt-->
+	
+	<!--s:popular brand-->
+	<section class="__most_popular">
+		<h4><strong>POPULAR</strong> BRAND</h4>
+		<ul class="__itemlist_type01">
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/__itemlist_type01_img.jpg" />
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/__itemlist_type01_img.jpg" />
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/__itemlist_type01_img.jpg" />
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/__itemlist_type01_img.jpg" />
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/__itemlist_type01_img.jpg" />
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+		</ul>
+	</section>
+	<!--e:popular brand-->
+	
+</article>
+<!--e:article-->
+
+<!--s:footer-->
+<footer id="footer">
+	<ul id="fnb">
+		<li><a href="#" trans="disolve" title="About">About</a></li>
+		<li><a href="#" trans="disolve" title="Terms of Use">Terms of Use</a></li>
+		<li><a href="#" trans="disolve" title="Privacy Policy">Privacy Policy</a></li>
+	</ul>
+	<div class="copyright">
+		<div>
+			Copyright © 2015 kasih kasih. All Rights Reserved.
+			<ul class="lang">
+				<li class="id"><a href="#" title="Indonesian"></a></li>
+				<li class="en"><a href="#" title="English"></a></li>
+			</ul>
+		</div>
+	</div>
+	<a href="#" class="topBtn"></a>
+</footer>
+<!--e:footer-->
+
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kasih Kasih</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+
+<!--s:global menu-->
+<section id="gnb">
+	<ul class="gmenu">
+		<!--s:logged-->
+		<li class="logged">
+			<a href="#" trans="disolve" title="My name" class="name">Steve jobs</a>
+			<a href="#" trans="disolve" title="Logout">Logout</a>
+		</li>
+		<!--e:logged-->
+		<!--s:not login-->
+		<li>
+			<a href="#" trans="disolve" title="Login">Login</a>
+		</li>
+		<!--e:not login-->
+		<li class="myzone">
+			<a href="#" trans="disolve" title="My Zone">
+				My Zone<img src="img/gnb_spr.png" class="spr" />
+				<!--s:dropdown menu-->
+				<ul class="myzoneMenu" trans="disolve">
+					<li><a href="#" trans="underline">Receive Gifts</a></li>
+					<li><a href="#" trans="underline">Sent gift</a></li>
+					<li><a href="#" trans="underline">Cart</a></li>
+					<li><a href="#" trans="underline">Wish List</a></li>
+					<li><a href="#" trans="underline">Edit My Profile</a></li>
+					<li><a href="#" trans="underline">Edit decoration</a></li>
+				</ul>
+				<!--e:dropdown menu-->
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Receive Gifts">Receive Gifts</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Cart">
+				<img src="img/gnb_cart_ico.png" title="Cart" alt="Cart" style="margin-top:-4px;" />
+				Cart<span class="count">3</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Customer Service">Customer Service</a>
+		</li>
+	</ul>
+</section>
+<!--e:global menu-->
+
+<!--s:header-->
+<header id="header">
+	<a href="#" class="logo" title="Kasih Kasih"><h1>Kasih Kasih</h1></a>
+	<form name="" action="" method="" class="searchForm">
+		<fieldset>
+			<legend>total search</legend>
+			<input type="text" placeholder="Search product or brand" class="keyword" />
+			<input type="image" src="img/searchForm_submit.jpg" class="submit" />
+		</fieldset>
+	</form>
+</header>
+<!--e:header-->
+
+<!--s:main menu-->
+<nav id="nav">
+	<ul class="mmenu">
+		<li>
+			<a href="#" trans="disolve" title="Brand"><img src="img/mmenu_brand_ico.png" />Brand</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Theme"><img src="img/mmenu_theme_ico.png" />Theme</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Event"><img src="img/mmenu_event_ico.png" />Event</a>
+		</li>
+	</ul>
+</nav>
+<!--e:main menu-->
+
+<!--s:article-->
+<article id="buy">
+	
+	<!--s:status bar-->
+	<h2 class="__stat_bar">
+		Purchase
+		<ul class="nav_link">
+			<li><a href="#" class="home"><img src="img/nav_bar_home.jpg" /></a></li>
+			<li> > <a href="#">Purchase</a></li>
+		</ul>
+	</h2>
+	<!--e:status bar-->
+	
+	<form name="" action="" method="">
+		
+		<!--s:order details-->
+		<table cellpadding="0" cellspacing="0" border="0" class="__article_table02">
+			<colgroup>
+				<col width="auto" />
+				<col width="200" />
+				<col width="200" />
+			</colgroup>
+			<thead>
+				<tr class="h4_head">
+					<th colspan="3">
+						<h4><strong>01.</strong> Order Details</h4>
+					</th>
+				</tr>
+			</thead>
+			<thead>
+				<tr>
+					<th>Product</th>
+					<th>Amount</th>
+					<th>Normal Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!--s:repeat-->
+				<tr>
+					<td>
+						<dl>
+							<dt><img src="img/buy_img.jpg" /></dt>
+							<dd class="__item_brand">DUNKIN' DONUTS</dd>
+							<dd class="__item_title">Honey Fritter</dd>
+						</dl>
+					</td>
+					<td class="eachOne">
+						Each one people<br />
+						<select>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</td>
+					<td>
+						<span class="__item_price"><strong>295</strong>$</span>
+					</td>
+				</tr>
+				<!--e:repeat-->
+				<!--s:repeat-->
+				<tr>
+					<td>
+						<dl>
+							<dt><img src="img/buy_img.jpg" /></dt>
+							<dd class="__item_brand">DUNKIN' DONUTS</dd>
+							<dd class="__item_title">Mint Chocolate Chip</dd>
+						</dl>
+					</td>
+					<td class="eachOne">
+						Each one people<br />
+						<select>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+					</td>
+					<td>
+						<span class="__item_price"><strong>295</strong>$</span>
+					</td>
+				</tr>
+				<!--e:repeat-->
+			</tbody>
+		</table>
+		<!--e:order details-->
+		
+		<!--s:gift recipient-->
+		<table cellpadding="0" cellspacing="0" border="0" class="__article_table02">
+			<colgroup>
+				<col width="100" />
+				<col width="200" />
+				<col width="auto" />
+				<col width="200" />
+				<col width="100" />
+			</colgroup>
+			<thead>
+				<tr class="h4_head">
+					<th colspan="5">
+						<h4><strong>02.</strong> Gift Recipient</h4>
+					</th>
+				</tr>
+			</thead>
+			<thead>
+				<tr>
+					<th>No.</th>
+					<th>Send to My Phone</th>
+					<th>Cell Phone Number</th>
+					<th>Name</th>
+					<th>Delete</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!--s:repeat-->
+				<tr>
+					<td class="txt_center">
+						2
+					</td>
+					<td class="txt_center">
+						<label class="__checkboxArea">
+							<input type="checkbox" />
+						</label>
+					</td>
+					<td class="txt_center phone">
+						<input type="text" value="" />
+					</td>
+					<td class="txt_center">
+						-
+					</td>
+					<td class="txt_center">
+						<a href="#" class="__btn_red">Delete</a>
+					</td>
+				</tr>
+				<!--e:repeat-->
+				<!--s:repeat-->
+				<tr>
+					<td class="txt_center">
+						1
+					</td>
+					<td class="txt_center">
+						<label class="__checkboxArea">
+							<input type="checkbox" />
+						</label>
+					</td>
+					<td class="txt_center phone">
+						<input type="text" value="" />
+					</td>
+					<td class="txt_center">
+						-
+					</td>
+					<td class="txt_center">
+						<a href="#" class="__btn_red">Delete</a>
+					</td>
+				</tr>
+				<!--e:repeat-->
+			</tbody>
+		</table>
+		<div class="addBtns">
+			<a href="#" class="__btn_cn_blue">Add from Contacts</a>
+			<a href="#" class="__btn_cn_gray">Add a gift recipient</a>
+		</div>
+		<!--e:gift recipient-->
+		
+		<!--s:gift sender information-->
+		<table cellpadding="0" cellspacing="0" border="0" class="__article_table02">
+			<colgroup>
+				<col width="200" />
+				<col width="auto" />
+				<col width="300" />
+			</colgroup>
+			<thead>
+				<tr class="h4_head">
+					<th colspan="3">
+						<h4><strong>03.</strong> Gift Sender Information</h4>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>
+						Cell Phone Number
+					</th>
+					<td>
+						010-1234-5678
+					</td>
+					<td rowspan="2" class="giftsenderinfo_frv">
+						<img src="img/edit_card_fr.jpg" /><br /><br />
+						<a href="#" class="__btn_red">Edit</a>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						MMS Message
+					</th>
+					<td class="giftsenderinfo_txt">
+						<textarea></textarea>
+						<span class="lengCount">1 / 160</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--e:gift sender information-->
+		
+		<!--s:how to payment-->
+		<table cellpadding="0" cellspacing="0" border="0" class="__article_table02">
+			<colgroup>
+				<col width="200" />
+				<col width="auto" />
+			</colgroup>
+			<thead>
+				<tr class="h4_head">
+					<th colspan="2">
+						<h4><strong>04.</strong> How To Payment</h4>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th rowspan="2">
+						How To Payment
+					</th>
+					<td toggleBtns>
+						<label class="__radioArea" toggle="credit">
+							<input type="radio" name="payment" value="Credit Cards" checked />Credit Cards
+						</label>
+						<label class="__radioArea" toggle="mobile">
+							<input type="radio" name="payment" value="Mobile payment" />Mobile payment
+						</label>
+						<label class="__radioArea" toggle="bank">
+							<input type="radio" name="payment" value="Bank Transfer" />Bank Transfer
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<!--s:credit cards-->
+						<p toggle="credit">
+							credit cards txt
+						</p>
+						<!--e:credit cards-->
+						<!--s:mobile-->
+						<p toggle="mobile" style="display:none;">
+							mobile txt
+						</p>
+						<!--e:mobile-->
+						<!--s:bank-->
+						<p toggle="bank" style="display:none;">
+							bank txt
+						</p>
+						<!--e:bank-->
+					</td>
+				</tr>
+				<tr>
+					<td class="totalPrice" colspan="2">
+						<strong class="title">Total payment amount</strong>
+						<span class="__item_price"><strong>295</strong>$</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--e:how to payment-->
+		
+		<!--s:how to refund-->
+		<table cellpadding="0" cellspacing="0" border="0" class="__article_table02">
+			<thead>
+				<tr class="h4_head">
+					<th colspan="2">
+						<h4><strong>05.</strong> How to refund</h4>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="refund_txt">
+						refund information txt
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--e:how to refund-->
+		
+		<!--s:buttons-->
+		<div class="__btnArea">
+			<input type="submit" class="__btn_cn_blue" value="Pay" />
+			<input type="submit" class="__btn_cn_gray" value="Cancel" />
+		</div>
+		<!--e:buttons-->
+		
+	</form>
+	
+</article>
+<!--e:article-->
+
+<!--s:footer-->
+<footer id="footer">
+	<ul id="fnb">
+		<li><a href="#" trans="disolve" title="About">About</a></li>
+		<li><a href="#" trans="disolve" title="Terms of Use">Terms of Use</a></li>
+		<li><a href="#" trans="disolve" title="Privacy Policy">Privacy Policy</a></li>
+	</ul>
+	<div class="copyright">
+		<div>
+			Copyright © 2015 kasih kasih. All Rights Reserved.
+			<ul class="lang">
+				<li class="id"><a href="#" title="Indonesian"></a></li>
+				<li class="en"><a href="#" title="English"></a></li>
+			</ul>
+		</div>
+	</div>
+	<a href="#" class="topBtn"></a>
+</footer>
+<!--e:footer-->
+
+</body>
+</html>

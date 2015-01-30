@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kasih Kasih</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+
+<!--s:global menu-->
+<section id="gnb">
+	<ul class="gmenu">
+		<!--s:logged-->
+		<li class="logged">
+			<a href="#" trans="disolve" title="My name" class="name">Steve jobs</a>
+			<a href="#" trans="disolve" title="Logout">Logout</a>
+		</li>
+		<!--e:logged-->
+		<!--s:not login-->
+		<li>
+			<a href="#" trans="disolve" title="Login">Login</a>
+		</li>
+		<!--e:not login-->
+		<li class="myzone">
+			<a href="#" trans="disolve" title="My Zone">
+				My Zone<img src="img/gnb_spr.png" class="spr" />
+				<!--s:dropdown menu-->
+				<ul class="myzoneMenu" trans="disolve">
+					<li><a href="#" trans="underline">Receive Gifts</a></li>
+					<li><a href="#" trans="underline">Sent gift</a></li>
+					<li><a href="#" trans="underline">Cart</a></li>
+					<li><a href="#" trans="underline">Wish List</a></li>
+					<li><a href="#" trans="underline">Edit My Profile</a></li>
+					<li><a href="#" trans="underline">Edit decoration</a></li>
+				</ul>
+				<!--e:dropdown menu-->
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Receive Gifts">Receive Gifts</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Cart">
+				<img src="img/gnb_cart_ico.png" title="Cart" alt="Cart" style="margin-top:-4px;" />
+				Cart<span class="count">3</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Customer Service">Customer Service</a>
+		</li>
+	</ul>
+</section>
+<!--e:global menu-->
+
+<!--s:header-->
+<header id="header">
+	<a href="#" class="logo" title="Kasih Kasih"><h1>Kasih Kasih</h1></a>
+	<form name="" action="" method="" class="searchForm">
+		<fieldset>
+			<legend>total search</legend>
+			<input type="text" placeholder="Search product or brand" class="keyword" />
+			<input type="image" src="img/searchForm_submit.jpg" class="submit" />
+		</fieldset>
+	</form>
+</header>
+<!--e:header-->
+
+<!--s:main menu-->
+<nav id="nav">
+	<ul class="mmenu">
+		<li>
+			<a href="#" trans="disolve" title="Brand"><img src="img/mmenu_brand_ico.png" />Brand</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Theme"><img src="img/mmenu_theme_ico.png" />Theme</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Event"><img src="img/mmenu_event_ico.png" />Event</a>
+		</li>
+	</ul>
+</nav>
+<!--e:main menu-->
+
+<!--s:article-->
+<article id="buy">
+	
+	<!--s:layer popup-->
+	<div id="layer_popup" class="edit_card">
+		<div class="title">
+			Edit decoration
+			<a href="#" class="close">X</a>
+		</div>
+		<form class="cont">
+			
+			<!--s:mms preview-->
+			<div class="mms_preview">
+				<span class="title">MMS Preview</span>
+				<div class="receive_box">
+					<div class="gift_img">
+						<img src="img/receive_left_img.jpg" width="100%" />
+						<span class="gift_brand"><img src="img/receive_gifts_view_logo.jpg" alt="PHILIPS" width="100%" /></span>
+					</div>
+					<dl>
+						<dt>Americano</dt>
+						<dd>Amount : 1</dd>
+						<dd>The term of validity : ~2015.12.12</dd>
+						<dd>coffee1004</dd>
+					</dl>
+					<div class="complete_chek">
+						<img class="code_img" width="100%" src="img/receive_barcode_img.jpg" />
+						<span class="code_num">9009&nbsp;&nbsp;2136&nbsp;&nbsp;4341</span>
+					</div>
+				</div>
+				<p class="edit_card">
+					<img src="img/img_edit_card.jpg" width="100%" class="edit_cardIMG" />
+				</p>
+			</div>
+			<!--e:mms preview-->
+			
+			<div class="bannerZone">
+				
+				<!--s:Default Banner-->
+				<div class="sec_default">
+					<span class="title">Default Banner</span>
+					<span class="sment">Decorate the image as you wish.</span>
+					
+					<ul class="card_list default_banner">
+						<li><a href="#"><img src="img/edit_card_01.jpg" /></a></li>
+						<li><a href="#"><img src="img/edit_card_02.jpg" /></a></li>
+						<li><a href="#"><img src="img/edit_card_03.jpg" /></a></li>
+						<li><a href="#"><img src="img/edit_card_04.jpg" /></a></li>
+						<!--if don't have items-->
+						<!--li class="not_data">don't have items</li-->
+					</ul>
+					
+					<ul class="__paging_area">
+						<li class="___paging_before"><a href="#"><img src="img/paging_left.png" /></a></li>
+						<li class="___paging_num_active">1</li>
+						<li class="___paging_num"><a href="#">2</a></li>
+						<li class="___paging_num"><a href="#">3</a></li>
+						<li class="___paging_num"><a href="#">4</a></li>
+						<li class="___paging_num"><a href="#">5</a></li>
+						<li class="___paging_after"><a href="#"><img src="img/paging_right.png" /></a></li>
+					</ul>
+				</div>
+				<!--e:Default Banner-->
+				
+				<!--s:My Banner-->
+				<div class="sec_mybanner">
+					<span class="title">My Banner</span>
+					
+					<ul class="card_list">
+						<li><a href="#"><img src="img/edit_card_01.jpg" /></a><a href="#" class="delBtn"></a></li>
+						<li><a href="#"><img src="img/edit_card_02.jpg" /></a><a href="#" class="delBtn"></a></li>
+						<li><a href="#"><img src="img/edit_card_03.jpg" /></a><a href="#" class="delBtn"></a></li>
+						<li><a href="#"><img src="img/edit_card_04.jpg" /></a><a href="#" class="delBtn"></a></li>
+						<!--s:if don't have items-->
+						<!--li class="not_data">Your banner list is empty.</li-->
+					</ul>
+					
+					<ul class="__paging_area">
+						<li class="___paging_before"><a href="#"><img src="img/paging_left.png" /></a></li>
+						<li class="___paging_num_active">1</li>
+						<li class="___paging_num"><a href="#">2</a></li>
+						<li class="___paging_num"><a href="#">3</a></li>
+						<li class="___paging_num"><a href="#">4</a></li>
+						<li class="___paging_num"><a href="#">5</a></li>
+						<li class="___paging_after"><a href="#"><img src="img/paging_right.png" /></a></li>
+					</ul>
+				</div>
+				<!--e:My Banner-->
+				
+			</div>
+			
+			<!--s:buttons-->
+			<div class="__btnArea">
+				<input type="button" class="__btn_cn_blue" value="Verify" />
+			</div>
+			<!--e:buttons-->
+		</form>
+	</div>
+	<div id="layer_popup_bg"></div>
+	<!--e:layer popup-->
+	
+</article>
+<!--e:article-->
+
+<!--s:footer-->
+<footer id="footer">
+	<ul id="fnb">
+		<li><a href="#" trans="disolve" title="About">About</a></li>
+		<li><a href="#" trans="disolve" title="Terms of Use">Terms of Use</a></li>
+		<li><a href="#" trans="disolve" title="Privacy Policy">Privacy Policy</a></li>
+	</ul>
+	<div class="copyright">
+		<div>
+			Copyright © 2015 kasih kasih. All Rights Reserved.
+			<ul class="lang">
+				<li class="id"><a href="#" title="Indonesian"></a></li>
+				<li class="en"><a href="#" title="English"></a></li>
+			</ul>
+		</div>
+	</div>
+	<a href="#" class="topBtn"></a>
+</footer>
+<!--e:footer-->
+
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kasih Kasih</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+
+<!--s:global menu-->
+<section id="gnb">
+	<ul class="gmenu">
+		<!--s:logged-->
+		<li class="logged">
+			<a href="#" trans="disolve" title="My name" class="name">Steve jobs</a>
+			<a href="#" trans="disolve" title="Logout">Logout</a>
+		</li>
+		<!--e:logged-->
+		<!--s:not login-->
+		<li>
+			<a href="#" trans="disolve" title="Login">Login</a>
+		</li>
+		<!--e:not login-->
+		<li class="myzone">
+			<a href="#" trans="disolve" title="My Zone">
+				My Zone<img src="img/gnb_spr.png" class="spr" />
+				<!--s:dropdown menu-->
+				<ul class="myzoneMenu" trans="disolve">
+					<li><a href="#" trans="underline">Receive Gifts</a></li>
+					<li><a href="#" trans="underline">Sent gift</a></li>
+					<li><a href="#" trans="underline">Cart</a></li>
+					<li><a href="#" trans="underline">Wish List</a></li>
+					<li><a href="#" trans="underline">Edit My Profile</a></li>
+					<li><a href="#" trans="underline">Edit decoration</a></li>
+				</ul>
+				<!--e:dropdown menu-->
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Receive Gifts">Receive Gifts</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Cart">
+				<img src="img/gnb_cart_ico.png" title="Cart" alt="Cart" style="margin-top:-4px;" />
+				Cart<span class="count">3</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Customer Service">Customer Service</a>
+		</li>
+	</ul>
+</section>
+<!--e:global menu-->
+
+<!--s:header-->
+<header id="header">
+	<a href="#" class="logo" title="Kasih Kasih"><h1>Kasih Kasih</h1></a>
+	<form name="" action="" method="" class="searchForm">
+		<fieldset>
+			<legend>total search</legend>
+			<input type="text" placeholder="Search product or brand" class="keyword" />
+			<input type="image" src="img/searchForm_submit.jpg" class="submit" />
+		</fieldset>
+	</form>
+</header>
+<!--e:header-->
+
+<!--s:main menu-->
+<nav id="nav">
+	<ul class="mmenu">
+		<li>
+			<a href="#" trans="disolve" title="Brand"><img src="img/mmenu_brand_ico.png" />Brand</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Theme"><img src="img/mmenu_theme_ico.png" />Theme</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Event"><img src="img/mmenu_event_ico.png" />Event</a>
+		</li>
+	</ul>
+</nav>
+<!--e:main menu-->
+
+<!--s:article-->
+<article id="main">
+	
+	<h2>Kasih Kasih</h2>
+	
+	<!--s:visual area-->
+	<section class="visualArea">
+		<div class="mainVisual">
+			<!--s:repeat--><a href="#"><img src="img/main_visual01.jpg" /></a><!--e:repeat-->
+			<!--s:repeat--><a href="#"><img src="img/main_visual01.jpg" /></a><!--e:repeat-->
+			<!--s:repeat--><a href="#"><img src="img/main_visual01.jpg" /></a><!--e:repeat-->
+			<a href="#" class="btn l slidesjs-previous slidesjs-navigation"></a>
+			<a href="#" class="btn r slidesjs-next slidesjs-navigation"></a>
+		</div>
+		<div class="rollingBanners">
+			<div class="sec01">
+				<!--s:repeat--><a href="#"><img src="img/main_visual02.jpg" /></a><!--e:repeat-->
+				<!--s:repeat--><a href="#"><img src="img/main_visual02.jpg" /></a><!--e:repeat-->
+				<!--s:repeat--><a href="#"><img src="img/main_visual02.jpg" /></a><!--e:repeat-->
+				<a href="#" class="btn l slidesjs-previous slidesjs-navigation"></a>
+				<a href="#" class="btn r slidesjs-next slidesjs-navigation"></a>
+			</div>
+			<div class="sec02">
+				<!--s:repeat--><a href="#"><img src="img/main_visual03.jpg" /></a><!--e:repeat-->
+				<!--s:repeat--><a href="#"><img src="img/main_visual03.jpg" /></a><!--e:repeat-->
+				<!--s:repeat--><a href="#"><img src="img/main_visual03.jpg" /></a><!--e:repeat-->
+				<a href="#" class="btn l slidesjs-previous slidesjs-navigation"></a>
+				<a href="#" class="btn r slidesjs-next slidesjs-navigation"></a>
+			</div>
+		</div>
+		<span class="sdw l"></span>
+		<span class="sdw r"></span>
+	</section>
+	<!--e:visual area-->
+	
+	<!--s:hot brand-->
+	<section class="hotBrand">
+		<h4 class="gifts_title"><strong>HOT</strong> BRAND</h4>
+		<div class="hb_title">
+			<a href="#"><img src="img/main_hb_img.jpg" width="130" height="130" /></a>
+			<a href="#"><img src="img/main_hb_img02.jpg" width="130" height="130" /></a>
+		</div>
+		<div class="items_container">
+			<!--s:repeat-->
+			<div class="items">
+				<ul>
+					<!--s:repeat-->
+					<li>
+						<a href="#">
+							<img src="img/main_rec_img.jpg" />
+							<span class="__item_title">Marron Latte</span>
+							<span class="__item_brand">DUNKIN' DONUTS</span>
+							<span class="__item_price"><strong>60</strong>$</span>
+						</a>
+					</li>
+					<!--e:repeat-->
+					<!--s:repeat-->
+					<li>
+						<a href="#">
+							<img src="img/main_rec_img.jpg" />
+							<span class="__item_title">Marron Latte</span>
+							<span class="__item_brand">DUNKIN' DONUTS</span>
+							<span class="__item_price"><strong>60</strong>$</span>
+						</a>
+					</li>
+					<!--e:repeat-->
+					<!--s:repeat-->
+					<li>
+						<a href="#">
+							<img src="img/main_rec_img.jpg" />
+							<span class="__item_title">Marron Latte</span>
+							<span class="__item_brand">DUNKIN' DONUTS</span>
+							<span class="__item_price"><strong>60</strong>$</span>
+						</a>
+					</li>
+					<!--e:repeat-->
+					<!--s:repeat-->
+					<li>
+						<a href="#">
+							<img src="img/main_rec_img.jpg" />
+							<span class="__item_title">Marron Latte</span>
+							<span class="__item_brand">DUNKIN' DONUTS</span>
+							<span class="__item_price"><strong>60</strong>$</span>
+						</a>
+					</li>
+					<!--e:repeat-->
+				</ul>
+			</div>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<div class="items">
+				<ul>
+					<li>
+						<a href="#">
+							<img src="img/main_rec_img.jpg" />
+							<span class="__item_title">Marron Latte</span>
+							<span class="__item_brand">DUNKIN' DONUTS</span>
+							<span class="__item_price"><strong>60</strong>$</span>
+						</a>
+					</li>
+					<!--e:repeat-->
+					<!--s:repeat-->
+					<li>
+						<a href="#">
+							<img src="img/main_rec_img.jpg" />
+							<span class="__item_title">Marron Latte</span>
+							<span class="__item_brand">DUNKIN' DONUTS</span>
+							<span class="__item_price"><strong>60</strong>$</span>
+						</a>
+					</li>
+					<!--e:repeat-->
+					<!--s:repeat-->
+					<li>
+						<a href="#">
+							<img src="img/main_rec_img.jpg" />
+							<span class="__item_title">Marron Latte</span>
+							<span class="__item_brand">DUNKIN' DONUTS</span>
+							<span class="__item_price"><strong>60</strong>$</span>
+						</a>
+					</li>
+					<!--e:repeat-->
+					<!--s:repeat-->
+					<li>
+						<a href="#">
+							<img src="img/main_rec_img.jpg" />
+							<span class="__item_title">Marron Latte</span>
+							<span class="__item_brand">DUNKIN' DONUTS</span>
+							<span class="__item_price"><strong>60</strong>$</span>
+						</a>
+					</li>
+					<!--e:repeat-->
+				</ul>
+			</div>
+			<!--e:repeat-->
+			<a href="#" class="btn l slidesjs-previous slidesjs-navigation"></a>
+			<a href="#" class="btn r slidesjs-next slidesjs-navigation"></a>
+		</div>
+	</section>
+	<!--e:hot brand-->
+	
+	<!--s:recommended gift-->
+	<section class="recommGift gifts_list">
+		<h4 class="gifts_title"><strong>RECOMMENDED</strong> GIFT</h4>
+		<ul>
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/main_rec_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/main_rec_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/main_rec_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/main_rec_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/main_rec_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+		</ul>
+	</section>
+	<!--e:recommended gift-->
+	
+	<!--s:new gift-->
+	<section class="newGift gifts_list">
+		<h4 class="gifts_title"><strong>NEW</strong> GIFT</h4>
+		<ul>
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/main_rec_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/main_rec_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/main_rec_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/main_rec_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/main_rec_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+		</ul>
+	</section>
+	<!--e:new gift-->
+	
+	<!--s:most popular-->
+	<section class="__most_popular">
+		<h4><strong>MOST</strong> POPULAR</h4>
+		<ul class="__itemlist_type01">
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<span class="rank active">1</span>
+					<img src="img/__itemlist_type01_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<span class="rank">2</span>
+					<img src="img/__itemlist_type01_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<span class="rank">3</span>
+					<img src="img/__itemlist_type01_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/__itemlist_type01_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<li>
+				<a href="#">
+					<img src="img/__itemlist_type01_img.jpg" />
+					<span class="__item_title">Marron Latte</span>
+					<span class="__item_brand">DUNKIN' DONUTS</span>
+					<span class="__item_price"><strong>60</strong>$</span>
+				</a>
+			</li>
+			<!--e:repeat-->
+		</ul>
+	</section>
+	<!--e:most popular-->
+	
+	<!--s:notice-->
+	<section class="notice">
+		<h4>Notice</h4>
+		<a href="#" class="subject">this is notice subject link text</a>
+		<a href="#" class="more">more</a>
+	</section>
+	<!--e:notice-->
+	
+	<!--s:quick menu-->
+	<section class="quickMenu">
+		<div class="kasihkasih">
+			<h4><img src="img/main_qm_img01.jpg" alt="Kasih kasih" title="Kasih kasih" trans="disolve" /></h4>
+			<span class="title">Kasih kasih</span>
+			<ul>
+				<li><a href="#" trans="centerline">Brand</a></li>
+				<li><a href="#" trans="centerline">Theme</a></li>
+				<li><a href="#" trans="centerline">Event</a></li>
+			</ul>
+		</div>
+		<div class="customer">
+			<h4><img src="img/main_qm_img02.jpg" alt="Customer Service" title="Customer Service" trans="disolve" /></h4>
+			<span class="title">Customer Service</span>
+			<ul>
+				<li><a href="#" trans="centerline">Receive Gifts</a></li>
+				<li><a href="#" trans="centerline">Sent gift</a></li>
+				<li><a href="#" trans="centerline">Cart</a></li>
+				<li><a href="#" trans="centerline">Wish List</a></li>
+				<li><a href="#" trans="centerline">Edit My Profile</a></li>
+				<li><a href="#" trans="centerline">Decorate Management</a></li>
+			</ul>
+		</div>
+		<div class="myzone">
+			<h4><img src="img/main_qm_img03.jpg" alt="My Zone" title="My Zone" trans="disolve" /></h4>
+			<span class="title">My Zone</span>
+			<ul>
+				<li><a href="#" trans="centerline">FAQ</a></li>
+				<li><a href="#" trans="centerline">1:1Inquiry</a></li>
+				<li><a href="#" trans="centerline">Cancel Orders &amp; Refunds</a></li>
+				<li><a href="#" trans="centerline">Notice</a></li>
+				<li><a href="#" trans="centerline">About</a></li>
+			</ul>
+		</div>
+		<div class="member">
+			<h4><img src="img/main_qm_img04.jpg" alt="Member" title="Member" trans="disolve" /></h4>
+			<span class="title">Member</span>
+			<ul>
+				<li><a href="#" trans="centerline">Register</a></li>
+				<li><a href="#" trans="centerline">Find My ID</a></li>
+				<li><a href="#" trans="centerline">Find a Password</a></li>
+			</ul>
+		</div>
+	</section>
+	<!--e:quick menu-->
+	
+</article>
+<!--e:article-->
+
+<!--s:footer-->
+<footer id="footer">
+	<ul id="fnb">
+		<li><a href="#" trans="disolve" title="About">About</a></li>
+		<li><a href="#" trans="disolve" title="Terms of Use">Terms of Use</a></li>
+		<li><a href="#" trans="disolve" title="Privacy Policy">Privacy Policy</a></li>
+	</ul>
+	<div class="copyright">
+		<div>
+			Copyright © 2015 kasih kasih. All Rights Reserved.
+			<ul class="lang">
+				<li class="id"><a href="#" title="Indonesian"></a></li>
+				<li class="en"><a href="#" title="English"></a></li>
+			</ul>
+		</div>
+	</div>
+	<a href="#" class="topBtn"></a>
+</footer>
+<!--e:footer-->
+
+</body>
+</html>

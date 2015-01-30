@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kasih Kasih</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+
+<!--s:global menu-->
+<section id="gnb">
+	<ul class="gmenu">
+		<!--s:logged-->
+		<li class="logged">
+			<a href="#" trans="disolve" title="My name" class="name">Steve jobs</a>
+			<a href="#" trans="disolve" title="Logout">Logout</a>
+		</li>
+		<!--e:logged-->
+		<!--s:not login-->
+		<li>
+			<a href="#" trans="disolve" title="Login">Login</a>
+		</li>
+		<!--e:not login-->
+		<li class="myzone">
+			<a href="#" trans="disolve" title="My Zone">
+				My Zone<img src="img/gnb_spr.png" class="spr" />
+				<!--s:dropdown menu-->
+				<ul class="myzoneMenu" trans="disolve">
+					<li><a href="#" trans="underline">Receive Gifts</a></li>
+					<li><a href="#" trans="underline">Sent gift</a></li>
+					<li><a href="#" trans="underline">Cart</a></li>
+					<li><a href="#" trans="underline">Wish List</a></li>
+					<li><a href="#" trans="underline">Edit My Profile</a></li>
+					<li><a href="#" trans="underline">Edit decoration</a></li>
+				</ul>
+				<!--e:dropdown menu-->
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Receive Gifts">Receive Gifts</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Cart">
+				<img src="img/gnb_cart_ico.png" title="Cart" alt="Cart" style="margin-top:-4px;" />
+				Cart<span class="count">3</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Customer Service">Customer Service</a>
+		</li>
+	</ul>
+</section>
+<!--e:global menu-->
+
+<!--s:header-->
+<header id="header">
+	<a href="#" class="logo" title="Kasih Kasih"><h1>Kasih Kasih</h1></a>
+	<form name="" action="" method="" class="searchForm">
+		<fieldset>
+			<legend>total search</legend>
+			<input type="text" placeholder="Search product or brand" class="keyword" />
+			<input type="image" src="img/searchForm_submit.jpg" class="submit" />
+		</fieldset>
+	</form>
+</header>
+<!--e:header-->
+
+<!--s:main menu-->
+<nav id="nav">
+	<ul class="mmenu">
+		<li>
+			<a href="#" trans="disolve" title="Brand"><img src="img/mmenu_brand_ico.png" />Brand</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Theme"><img src="img/mmenu_theme_ico.png" />Theme</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Event"><img src="img/mmenu_event_ico.png" />Event</a>
+		</li>
+	</ul>
+</nav>
+<!--e:main menu-->
+
+<!--s:article-->
+<article id="find_pass" class="myInfo">
+	
+	<!--s:status bar-->
+	<h2 class="__stat_bar">
+		Find a Password
+		<ul class="nav_link">
+			<li><a href="#" class="home"><img src="img/nav_bar_home.jpg" /></a></li>
+			<li> > <a href="#">Login</a></li>
+			<li> > <a href="#">Find a Password</a></li>
+		</ul>
+	</h2>
+	<!--e:status bar-->
+	
+	<!--s:tab-->
+	<ul class="__ev_tab">
+		<li><a href="#" trans="disolve">Find My ID</a></li>
+		<li class="active"><a href="#" trans="disolve">Find a Password</a></li>
+	</ul>
+	<!--e:tab-->
+	
+	<form name="" action="" method="">
+		<fieldset>
+		
+			<legend><h3>Find password</h3></legend>
+			
+			<!--s:inputs-->
+			<table cellpadding="0" cellspacing="0" border="0" class="membersIpTable">
+				<tbody>
+					<tr>
+						<th>ID <em>*</em></th>
+						<td>
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<th>Name <em>*</em></th>
+						<td>
+							<input type="text" placeholder="First Name" />
+						</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td class="no_padd">
+							<input type="text" placeholder="Last Name" />
+						</td>
+					</tr>
+					<tr>
+						<th>Cell Phone Number <em>*</em></th>
+						<td>
+							<input type="text" placeholder="Without '-'" />
+							<a href="#" class="__btn_gray">Retransmission</a>
+						</td>
+					</tr>
+					<!--s:phone check input-->
+					<tr>
+						<th></th>
+						<td class="no_padd">
+							<input type="text" placeholder="Enter check code" />
+							<a href="#" class="__btn_red wideBtn">Complete certification</a>
+						</td>
+					</tr>
+					<!--e:phone check input-->
+				</tbody>
+			</table>
+			<!--e:inputs-->
+			
+			<!--s:buttons-->
+			<div class="__btnArea">
+				<input type="submit" value="Verify" class="__btn_cn_blue" />
+			</div>
+			<!--s:buttons-->
+			
+		</fieldset>
+	</form>
+	
+</article>
+<!--e:article-->
+
+<!--s:footer-->
+<footer id="footer">
+	<ul id="fnb">
+		<li><a href="#" trans="disolve" title="About">About</a></li>
+		<li><a href="#" trans="disolve" title="Terms of Use">Terms of Use</a></li>
+		<li><a href="#" trans="disolve" title="Privacy Policy">Privacy Policy</a></li>
+	</ul>
+	<div class="copyright">
+		<div>
+			Copyright © 2015 kasih kasih. All Rights Reserved.
+			<ul class="lang">
+				<li class="id"><a href="#" title="Indonesian"></a></li>
+				<li class="en"><a href="#" title="English"></a></li>
+			</ul>
+		</div>
+	</div>
+	<a href="#" class="topBtn"></a>
+</footer>
+<!--e:footer-->
+
+</body>
+</html>

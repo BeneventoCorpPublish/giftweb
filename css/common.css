@@ -1,0 +1,110 @@
+@charset "utf-8";
+/**************************************************
+	
+	Common
+	
+	Coded by Park.C.Y
+	
+**************************************************/
+/*web fonts*/
+@font-face{ font-family:OpenSans; font-weight:100; src:url(../font/OpenSans-Light.eot); src:local('※'), url(../font/OpenSans-Light.woff) format('woff'); }
+@font-face{ font-family:OpenSans; font-weight:300; src:url(../font/OpenSans-Regular.eot); src:local('※'), url(../font/OpenSans-Regular.woff) format('woff'); }
+@font-face{ font-family:OpenSans; font-weight:600; src:url(../font/OpenSans-ExtraBold.eot); src:local('※'), url(../font/OpenSans-ExtraBold.woff) format('woff'); }
+
+/*transitions*/
+*[trans=centerline]{ display:inline-block; transition:all 0.5s; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; }
+*[trans=centerline]:after{ display:block; width:0; border-bottom:1px solid #000; content:""; margin:0 auto 0 auto; transition:all 0.5s; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; }
+*[trans=centerline]:hover{ text-decoration:none; }
+*[trans=centerline]:hover:after{ width:100%; }
+*[trans=underline]{ display:inline-block; transition:all 0.5s; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; }
+*[trans=underline]:after{ display:block; width:0; border-bottom:1px solid #000; content:""; transition:all 0.5s; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; }
+*[trans=underline]:hover{ text-decoration:none; }
+*[trans=underline]:hover:after{ width:100%; }
+*[trans=background]{ display:inline-block; transition:all 0.5s; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; }
+*[trans=background]:hover{ background:#000000; color:#fff; }
+*[trans=disolve]{ transition:all 0.5s; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; }
+
+/*reset browsers*/
+*{ -webkit-text-size-adjust:none; -webkit-border-radius:0; }
+
+/*reset elements*/
+body,form,dl,dd{ margin:0; padding:0; }
+body,td,select,input,div,form,textarea,center,option,pre,p,span,blockquote,td,li,dd{ font-family:OpenSans,Tahoma,Arial Helvetica,sans-serif; font-weight:300; font-size:12px; color:#333; letter-spacing:0; }
+body{ background-color:#ffffff; line-height:18px; }
+label{ cursor:pointer; }
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,dd,hgroup{ display:block; }
+img{ border:none; vertical-align:middle; }
+fieldset{ margin:0; padding:0; border:none; }
+legend{ margin:0; padding:0; }
+p{ margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{ margin:0; padding:0; text-align:left; }
+ul{ margin:0; padding:0; list-style-type:none; font-size:0; }
+ul > li{ display:inline-block; *display:inline; *zoom:1; }
+
+/*Inputs*/
+input[type=button],
+input[type=submit]{ -webkit-appearance:none; }
+input[type=checkbox],
+input[type=radio]{ border:none; vertical-align:middle; cursor:pointer; }
+
+input[type=search]{ border:none; height:50px; }
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=email],
+input[type=url],
+input[type=number],
+textarea{ width:300px; padding:7px; border:1px solid #D0CFCF; border-right:1px solid #EDEDED; border-bottom:1px solid #EDEDED; background:#FAF9F9; line-height:18px; box-sizing:border-box; -webkit-box-sizing:border-box;‌​ -moz-box-sizing:border-box; transition:all 0.5s; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; }
+select{ padding:5px; border:1px solid #999; background:#FCFCFC; cursor:pointer; display:inline-block; *display:inline; *zoom:1; -webkit-appearance: none; vertical-align:top; text-align:left; padding:0 10px; padding-right:30px; height:34px; border:none; background:#ffffff url(../img/sortingBar_spr.jpg) no-repeat right center; background-size:19px; border:1px solid #bababa; min-width:100px; }
+
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=search]:hover,
+input[type=email]:hover,
+input[type=url]:hover,
+input[type=number]:hover,
+textarea:hover{ border:1px solid #D0CFCF; border-right:1px solid #EDEDED; border-bottom:1px solid #EDEDED; background:#fff; }
+select:hover{ background:#ffffff url(../img/sortingBar_spr.jpg) no-repeat right center; background-size:19px; border:1px solid #bababa; }
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=number]:focus,
+select:focus,
+textarea:focus{ background-color:#ffffff; }
+
+input[type=checkbox][disabled],
+input[type=radio][disabled]{ background-color:#ffffff; }
+input[disabled]{ background-color:#f3f3f3; }
+
+::-webkit-input-placeholder{ color:#98908b; }
+:-moz-placeholder{ color:#98908b; }
+::-moz-placeholder{ color:#98908b; }
+:-ms-input-placeholder{ color:#98908b; }
+
+/*reset links*/
+a:link{ text-decoration:none; color:#666666; }
+a:visited{ text-decoration:none; color:#666666; }
+a:active{ text-decoration:none; color:#666666; }
+a:hover{ text-decoration:underline; color:#000000; }
+
+/*Customizied checkbox, radio*/
+label.__checkboxArea{ background:url(../img/checkbox_bg.jpg) no-repeat 0 center; background-size:23px 22px; padding:11px 0 10px 22px; }
+label.__checkboxArea.active{ background:url(../img/checkbox_bg02.jpg) no-repeat 0 center; background-size:23px 22px; }
+input[type=checkbox]{ opacity:0; width:1px; height:1px; margin:0; padding:0; }
+label.__radioArea{ display:inline-block; background:url(../img/radio_bg.png) no-repeat 0 center; background-size:23px 23px; padding:0px 0 9px 30px; margin-right:30px; }
+label.__radioArea.active{ background:url(../img/radio_bg02.png) no-repeat 0 center; background-size:23px 23px; }
+input[type=radio]{ opacity:0; width:10px; height:10px; margin:0; padding:0; display:block; }
+
+/*slide Pagination*/
+.slidesjs-pagination{ position:absolute; bottom:0; left:0; width:100%; font-size:0; text-align:center; z-index:10; }
+.slidesjs-pagination li{ display:inline-block; *display:inline; *zoom:1; margin:0 3px !important; }
+.slidesjs-pagination li a{ width:10px; height:10px; display:block; font-size:0; background:#a6afb3; float:left; overflow:hidden; border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px; }
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover,
+.slidesjs-pagination li a:hover.active { background:#f22b2b; }
+
+/*ui-datepicker*/
+#ui-datepicker-div{ z-index:13 !important; }

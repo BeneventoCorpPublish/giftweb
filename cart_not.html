@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kasih Kasih</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+
+<!--s:global menu-->
+<section id="gnb">
+	<ul class="gmenu">
+		<!--s:logged-->
+		<li class="logged">
+			<a href="#" trans="disolve" title="My name" class="name">Steve jobs</a>
+			<a href="#" trans="disolve" title="Logout">Logout</a>
+		</li>
+		<!--e:logged-->
+		<!--s:not login-->
+		<li>
+			<a href="#" trans="disolve" title="Login">Login</a>
+		</li>
+		<!--e:not login-->
+		<li class="myzone">
+			<a href="#" trans="disolve" title="My Zone">
+				My Zone<img src="img/gnb_spr.png" class="spr" />
+				<!--s:dropdown menu-->
+				<ul class="myzoneMenu" trans="disolve">
+					<li><a href="#" trans="underline">Receive Gifts</a></li>
+					<li><a href="#" trans="underline">Sent gift</a></li>
+					<li><a href="#" trans="underline">Cart</a></li>
+					<li><a href="#" trans="underline">Wish List</a></li>
+					<li><a href="#" trans="underline">Edit My Profile</a></li>
+					<li><a href="#" trans="underline">Edit decoration</a></li>
+				</ul>
+				<!--e:dropdown menu-->
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Receive Gifts">Receive Gifts</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Cart">
+				<img src="img/gnb_cart_ico.png" title="Cart" alt="Cart" style="margin-top:-4px;" />
+				Cart<span class="count">3</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Customer Service">Customer Service</a>
+		</li>
+	</ul>
+</section>
+<!--e:global menu-->
+
+<!--s:header-->
+<header id="header">
+	<a href="#" class="logo" title="Kasih Kasih"><h1>Kasih Kasih</h1></a>
+	<form name="" action="" method="" class="searchForm">
+		<fieldset>
+			<legend>total search</legend>
+			<input type="text" placeholder="Search product or brand" class="keyword" />
+			<input type="image" src="img/searchForm_submit.jpg" class="submit" />
+		</fieldset>
+	</form>
+</header>
+<!--e:header-->
+
+<!--s:main menu-->
+<nav id="nav">
+	<ul class="mmenu">
+		<li>
+			<a href="#" trans="disolve" title="Brand"><img src="img/mmenu_brand_ico.png" />Brand</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Theme"><img src="img/mmenu_theme_ico.png" />Theme</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Event"><img src="img/mmenu_event_ico.png" />Event</a>
+		</li>
+	</ul>
+</nav>
+<!--e:main menu-->
+
+<!--s:article-->
+<article id="cart" class="myzone">
+	
+	<!--s:status bar-->
+	<h2 class="__stat_bar">
+		My Zone
+		<ul class="nav_link">
+			<li><a href="#" class="home"><img src="img/nav_bar_home.jpg" /></a></li>
+			<li> > <a href="#">My Zone</a></li>
+			<li> > <a href="#">Cart</a></li>
+		</ul>
+	</h2>
+	<!--e:status bar-->
+	
+	<!--s:tab-->
+	<div class="__tab" trans="disolve">
+		<ul>
+			<li><a href="#">Receive Gifts</a></li>
+			<li><a href="#">Sent gift</a></li>
+			<li class="active"><a href="#">Cart</a></li>
+			<li><a href="#">Wish List</a></li>
+			<li><a href="#">Edit My Profile</a></li>
+			<li><a href="#">Edit decoration</a></li>
+		</ul>
+	</div>
+	<!--e:tab-->
+	
+	<form name="" action="" method="">
+	
+		<!--s:item list-->
+		<table cellpadding="0" cellspacing="0" border="0" class="__article_table02">
+			<colgroup>
+				<col width="50" />
+				<col width="auto" />
+				<col width="200" />
+				<col width="200" />
+			</colgroup>
+			<thead>
+				<tr class="h4_head">
+					<th colspan="4">
+						<h4><strong>01.</strong> Product Information</h4>
+					</th>
+				</tr>
+			</thead>
+			<thead>
+				<tr>
+					<th>
+						<label class="__checkboxArea">
+							<input type="checkbox" />
+						</label>
+					</th>
+					<th>Product</th>
+					<th>Amount</th>
+					<th>Normal Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!--s:repeat-->
+				<tr>
+					<td colspan="4" class="txt_center">
+						don't have items
+					</td>
+				</tr>
+				<!--e:repeat-->
+			</tbody>
+		</table>
+		<!--e:item list-->
+		
+		<!--s:total price-->
+		<p class="total_price">
+			Total payments
+			<span><strong>0</strong>$</span>
+		</p>
+		<!--e:total price-->
+		
+		<!--s:paging-->
+		<ul class="__paging_area">
+			<li class="___paging_before"><a href="#"><img src="img/paging_left.png" /></a></li>
+			<li class="___paging_num_active">1</li>
+			<li class="___paging_num"><a href="#">2</a></li>
+			<li class="___paging_num"><a href="#">3</a></li>
+			<li class="___paging_num"><a href="#">4</a></li>
+			<li class="___paging_num"><a href="#">5</a></li>
+			<li class="___paging_after"><a href="#"><img src="img/paging_right.png" /></a></li>
+		</ul>
+		<!--e:paging-->
+		
+		<!--s:buttons-->
+		<div class="__buttonArea">
+			<strong>All of the selected products</strong>
+			<input type="button" class="__btn_blue" value="into Cart selected" />
+			<input type="button" class="__btn_red" value="Buy selected" />
+			<input type="button" class="__btn_gray" value="Delete selected" />
+		</div>
+		<!--e:buttons-->
+	
+	</form>
+	
+</article>
+<!--e:article-->
+
+<!--s:footer-->
+<footer id="footer">
+	<ul id="fnb">
+		<li><a href="#" trans="disolve" title="About">About</a></li>
+		<li><a href="#" trans="disolve" title="Terms of Use">Terms of Use</a></li>
+		<li><a href="#" trans="disolve" title="Privacy Policy">Privacy Policy</a></li>
+	</ul>
+	<div class="copyright">
+		<div>
+			Copyright © 2015 kasih kasih. All Rights Reserved.
+			<ul class="lang">
+				<li class="id"><a href="#" title="Indonesian"></a></li>
+				<li class="en"><a href="#" title="English"></a></li>
+			</ul>
+		</div>
+	</div>
+	<a href="#" class="topBtn"></a>
+</footer>
+<!--e:footer-->
+
+</body>
+</html>

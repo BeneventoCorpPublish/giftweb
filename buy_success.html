@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kasih Kasih</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+</head>
+<body>
+
+<!--s:global menu-->
+<section id="gnb">
+	<ul class="gmenu">
+		<!--s:logged-->
+		<li class="logged">
+			<a href="#" trans="disolve" title="My name" class="name">Steve jobs</a>
+			<a href="#" trans="disolve" title="Logout">Logout</a>
+		</li>
+		<!--e:logged-->
+		<!--s:not login-->
+		<li>
+			<a href="#" trans="disolve" title="Login">Login</a>
+		</li>
+		<!--e:not login-->
+		<li class="myzone">
+			<a href="#" trans="disolve" title="My Zone">
+				My Zone<img src="img/gnb_spr.png" class="spr" />
+				<!--s:dropdown menu-->
+				<ul class="myzoneMenu" trans="disolve">
+					<li><a href="#" trans="underline">Receive Gifts</a></li>
+					<li><a href="#" trans="underline">Sent gift</a></li>
+					<li><a href="#" trans="underline">Cart</a></li>
+					<li><a href="#" trans="underline">Wish List</a></li>
+					<li><a href="#" trans="underline">Edit My Profile</a></li>
+					<li><a href="#" trans="underline">Edit decoration</a></li>
+				</ul>
+				<!--e:dropdown menu-->
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Receive Gifts">Receive Gifts</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Cart">
+				<img src="img/gnb_cart_ico.png" title="Cart" alt="Cart" style="margin-top:-4px;" />
+				Cart<span class="count">3</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Customer Service">Customer Service</a>
+		</li>
+	</ul>
+</section>
+<!--e:global menu-->
+
+<!--s:header-->
+<header id="header">
+	<a href="#" class="logo" title="Kasih Kasih"><h1>Kasih Kasih</h1></a>
+	<form name="" action="" method="" class="searchForm">
+		<fieldset>
+			<legend>total search</legend>
+			<input type="text" placeholder="Search product or brand" class="keyword" />
+			<input type="image" src="img/searchForm_submit.jpg" class="submit" />
+		</fieldset>
+	</form>
+</header>
+<!--e:header-->
+
+<!--s:main menu-->
+<nav id="nav">
+	<ul class="mmenu">
+		<li>
+			<a href="#" trans="disolve" title="Brand"><img src="img/mmenu_brand_ico.png" />Brand</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Theme"><img src="img/mmenu_theme_ico.png" />Theme</a>
+		</li>
+		<li>
+			<a href="#" trans="disolve" title="Event"><img src="img/mmenu_event_ico.png" />Event</a>
+		</li>
+	</ul>
+</nav>
+<!--e:main menu-->
+
+<!--s:article-->
+<article id="buy_success">
+	
+	<!--s:status bar-->
+	<h2 class="__stat_bar">
+		Purchase Complete
+		<ul class="nav_link">
+			<li><a href="#" class="home"><img src="img/nav_bar_home.jpg" /></a></li>
+			<li> > <a href="#">Purchase Complete</a></li>
+		</ul>
+	</h2>
+	<!--e:status bar-->
+	
+	<!--s:success head-->
+	<section class="rs_head">
+		<strong>The payment of the ordered product is in progress.</strong><br />
+		Information about the ordered items can be found in the <a href="#">My Zone &gt; Orders.</a>
+	</section>
+	<!--e:success head-->
+	
+	<!--s:order details-->
+	<table cellpadding="0" cellspacing="0" border="0" class="__article_table02">
+		<colgroup>
+			<col width="auto" />
+			<col width="200" />
+			<col width="200" />
+		</colgroup>
+		<thead>
+			<tr class="h4_head">
+				<th colspan="3">
+					<h4><strong>01.</strong> Product Information</h4>
+				</th>
+			</tr>
+		</thead>
+		<thead>
+			<tr>
+				<th>Product</th>
+				<th>Amount</th>
+				<th>Payment amount</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!--s:repeat-->
+			<tr>
+				<td>
+					<dl>
+						<dt><img src="img/buy_img.jpg" /></dt>
+						<dd class="__item_brand">DUNKIN' DONUTS</dd>
+						<dd class="__item_title">Honey Fritter</dd>
+					</dl>
+				</td>
+				<td  class="txt_center">
+					1
+				</td>
+				<td class="txt_center">
+					<span class="__item_price"><strong>295</strong>$</span>
+				</td>
+			</tr>
+			<!--e:repeat-->
+			<!--s:repeat-->
+			<tr>
+				<td>
+					<dl>
+						<dt><img src="img/buy_img.jpg" /></dt>
+						<dd class="__item_brand">DUNKIN' DONUTS</dd>
+						<dd class="__item_title">Mint Chocolate Chip</dd>
+					</dl>
+				</td>
+				<td class="txt_center">
+					2
+				</td>
+				<td class="txt_center">
+					<span class="__item_price"><strong>295</strong>$</span>
+				</td>
+			</tr>
+			<!--e:repeat-->
+		</tbody>
+	</table>
+	<!--e:order details-->
+	
+	<!--s:Payment information-->
+	<table cellpadding="0" cellspacing="0" border="0" class="__article_table02">
+		<colgroup>
+			<col width="200" />
+			<col width="auto" />
+			<col width="300" />
+		</colgroup>
+		<thead>
+			<tr class="h4_head">
+				<th colspan="4">
+					<h4><strong>02.</strong> Payment Information</h4>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>
+					Order Number
+				</th>
+				<td>
+					12345687
+				</td>
+				<th>
+					Date Received
+				</th>
+				<td>
+					2015-01-05 09:00:00
+				</td>
+			</tr>
+			<tr>
+				<th>
+					Total payment amount
+				</th>
+				<td>
+					300$
+				</td>
+				<th>
+					How To Payment
+				</th>
+				<td>
+					Credit Cards
+				</td>
+			</tr>
+			<tr>
+				<th>
+					Refunds account number
+				</th>
+				<td>
+					[KB Bank] 123-456-78910
+				</td>
+				<th>
+					From
+				</th>
+				<td>
+					Honggildong (010-1234-5678)
+				</td>
+			</tr>
+			<tr>
+				<th>
+					Gift recipient
+				</th>
+				<td colspan="3">
+					<!--s:repeat-->- <strong>HongGildong</strong> 01612345877<br /><!--e:repeat-->
+					<!--s:repeat-->- 01012345678<!--e:repeat-->
+				</td>
+			</tr>
+			<tr>
+				<th>
+					MMS Massage
+				</th>
+				<td colspan="3">
+					Hello~~
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!--e:Payment information-->
+	
+	<!--s:buttons-->
+	<div class="__btnArea">
+		<a href="#" class="__btn_cn_blue">Home</a>
+		<a href="#" class="__btn_cn_gray">Cancel</a>
+	</div>
+	<!--e:buttons-->
+	
+</article>
+<!--e:article-->
+
+<!--s:footer-->
+<footer id="footer">
+	<ul id="fnb">
+		<li><a href="#" trans="disolve" title="About">About</a></li>
+		<li><a href="#" trans="disolve" title="Terms of Use">Terms of Use</a></li>
+		<li><a href="#" trans="disolve" title="Privacy Policy">Privacy Policy</a></li>
+	</ul>
+	<div class="copyright">
+		<div>
+			Copyright © 2015 kasih kasih. All Rights Reserved.
+			<ul class="lang">
+				<li class="id"><a href="#" title="Indonesian"></a></li>
+				<li class="en"><a href="#" title="English"></a></li>
+			</ul>
+		</div>
+	</div>
+	<a href="#" class="topBtn"></a>
+</footer>
+<!--e:footer-->
+
+</body>
+</html>
