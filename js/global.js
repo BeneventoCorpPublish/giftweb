@@ -5,7 +5,7 @@
 	Coded by Park.C.Y & Kim.N.Y
 	
 **************************************************/
-//config datepicker
+//setting datepicker
 $(document).ready(function(){
 	$.datepicker.regional['en'] = {
 		closeText:'Close',
